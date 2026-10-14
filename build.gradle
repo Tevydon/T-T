@@ -1,0 +1,25 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.ttsmartlearners.app'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.ttsmartlearners.app"
+        minSdk 23
+        targetSdk 35
+        versionCode 308
+        versionName "3.0.8a"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.webkit:webkit:1.12.1'
+}
